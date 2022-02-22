@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Nova+Square&display=swap'); /*nova square font url*/
+
+:root {
+    background-color: #528058;
+}
+
+* { /*style for the all the elements*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Nova Square', cursive;
+}
+h1 {
+    font-size: 5.4rem;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+.container { /* centering the container for the quiz */
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 9rem;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+.btn { /*style for the "Play" and "High Scores" buttons*/
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background-color: rgb(221, 223, 132);
+    border-radius: 8px;
+    border: 1px solid rgb(38, 70, 28);
+}
+.btn:hover { /*hover effects for buttons*/
+    cursor:pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(221, 223, 132);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+#highscore-btn { /*exception for "High Scores" button*/
+    background: rgb(163, 224, 153);
+}
+#highscore-btn:hover { /*exception hover effects for "High Scores" button*/
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(163, 224, 153);
+}
+i {
+    font-size: 3rem;
+}
