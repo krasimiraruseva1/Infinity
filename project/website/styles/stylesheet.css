@@ -1,0 +1,148 @@
+.logo img{
+    position: absolute;
+    margin-top: -77px;
+    margin-left: -630px;
+    width: 19%;
+    
+
+}
+
+body, html{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out;
+    
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-transform: uppercase;
+}
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+
+}
+.content h1 span{
+    color: #fff;
+}
+.content a{
+    background: #fff;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.content a:hover{
+    background: rgb(3, 61, 13);
+    color: #fff;
+
+
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(../images/image1.jpg);
+    }
+    55%
+    {
+        background-image: url(../images/image2.jpg);
+    }
+    55%
+    {
+        background-image: url(../images/image3.jpg);
+    }
+    55%
+    {
+        background-image: url(../images/image4.jpg);
+    }
+    55%
+    {
+        background-image: url(../images/image5.jpg);
+    }
+    55%
+    {
+        background-image: url(../images/image6.jpg);
+    }
+    55%
+    {
+        background-image: url(../images/image7.jpg);
+    }
+    55%
+    {
+        background-image: url(../images/image9.jpg);
+    }
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar{
+    width: 850px;
+    height: 130px;
+    margin: auto;
+    
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+        background-image: url(../images/image4.jpg);
+}
+
+.menu{
+    width: 300px;
+    float: left;
+    height: 3000px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 110px;
+    margin-top: 27px;
+    font-size: 23px;
+}
+
+ul li a{
+    text-decoration:none;
+    color:rgb(250, 250, 250);
+    font-family:Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+ul li a:hover{
+    color:rgb(3, 61, 13);
+   
+ 
+}
