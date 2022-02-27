@@ -3,27 +3,26 @@
 body {
     color: #fff;
 }
-.choice-container {
+.choice-container { /*container for choices*/
     display: flex;
     margin-bottom: 0.8rem;
     width: 100%;
     border-radius: 4px;
     background: rgb(218, 216, 110);
     font-size: 3rem;
-    min-width: 80rem;
+    min-width: 50rem;
     color: black;
 }
-.choice-container:hover {
+.choice-container:hover { /*container for choices-hover*/
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(31, 104, 31);
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(96, 190, 41);
     transform: scale(1.02);
-    transform: transform 100ms;
 }
-.choice-prefix {
+.choice-prefix { /*adding the letter for choice in one line*/
     padding: 2rem 2.5rem;
     color: black;
 }
-.choice-text {
+.choice-text { /*adding the choice-text for choice in one line*/
     padding: 2rem;
     width: 100%;
 }
@@ -34,6 +33,42 @@ body {
 
 .incorrect {
     background: rgb(168, 14, 9);
+}
+
+/*Heads up Display*/
+
+#hud { /*"Score section in right"*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix { /*style of the title "question"*/
+   text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text { /*center a number of score*/
+   text-align: center;
+}
+
+#progressBar { /*style for progress bar*/
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid greenyellow;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: greenyellow;
+    width: 0%;
+}
+
+#question {
+    font-size: 3rem;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {

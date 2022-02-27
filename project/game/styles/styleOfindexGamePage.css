@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Nova+Square&display=swap'); /*nova square font url*/
 
-:root {
-    background-color: #528058;
+body {
+    background-color: #cfdfd1;
 }
 
 * { /*style for the all the elements*/
@@ -29,8 +29,14 @@ h2 {
     justify-content: center;
     align-items: center;
     max-width: 80rem;
-    margin: 0 auto;
+    margin: auto;
     padding: 9rem;
+    background-color: #528058;
+    position: absolute;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
 }
 .flex-column {
     display: flex;
