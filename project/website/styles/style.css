@@ -1,68 +1,80 @@
-*{
-    background: url(back.jpg) no-repeat center center fixed; 
-}
-*{
-    margin: 0;
-    padding: 0;
-
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-
-.navbar{
-    width: 1200px;
-    height: 75px;
-    margin: auto;
-    
+.main{
+    width: 100%;
 }
 
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-}
+nav{
+    width: 100%;
+    background-color: rgb(104, 87, 70);
+    height: 80px;
 
-.logo{
-
-    color:rgb(19, 54, 45);
-    font-size: 59px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding-left: 0.00002px;
-    float: center;
-    padding-top: 1px;
-    
-}
-
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-}
-
-ul{
-    float: left;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
-
-ul li{
-    list-style: none;
-    margin-left: 110px;
-    margin-top: 27px;
-    font-size: 20px;
-}
-
-ul li a{
-    text-decoration:none;
-    color:rgb(27, 61, 45);
-    font-family:Arial;
+.logo a{
+    font-size: 39px;
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    transition: 0.4s ease-in-out;
-
+    margin-left: 100px;
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    transition: 0.5s all ease;
+}
+ul{
+    margin: 25px;
+ 
+}
+ul li{
+    float: left;
+    padding: 0px 10px;
+    list-style: none;
 }
 ul li a:hover{
-    color:rgb(133, 25, 91);
-   
- 
+    color:rgb(232, 243, 76);
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/str.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 20s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse ;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animate {
+    0%{
+        background-image: url('../images/es.jpg');
+    }
+    0%{
+        background-image: url('../images/s.jpg');
+    }
+    0%{
+        background-image: url('../images/k.jpg');
+    }
+
 }
 
