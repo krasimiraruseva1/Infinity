@@ -10,9 +10,9 @@ body{
 
 nav{
     width: 100%;
-    background-color: rgb(104, 87, 70);
+    background-color: rgb(71, 54, 36);
     height: 80px;
-
+    line-height: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -21,12 +21,12 @@ nav{
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin-left: 100px;
-    
+    line-height: 65px;    
 }
 a{
     text-decoration: none;
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     transition: 0.5s all ease;
 }
 ul{
@@ -42,39 +42,55 @@ ul li a:hover{
     color:rgb(232, 243, 76);
 
 }
-body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-.container{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../images/str.jpg);
+.header{
+    background-image: url('../images/str.jpg');
+    background-position:center;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    transition: 20s;
-
-    animation-name: animate;
-    animation-direction: alternate-reverse ;
-    animation-duration: 30s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: ease-in-out;
+    height: 100vh;
 }
-@keyframes animate {
-    0%{
-        background-image: url('../images/es.jpg');
-    }
-    0%{
-        background-image: url('../images/s.jpg');
-    }
-    0%{
-        background-image: url('../images/k.jpg');
-    }
+
+.dropdown{
+    float: left;
+    overflow: hidden;
 
 }
 
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    background-color: rgb(71, 54, 36);
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: rgb(61, 49, 26);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(71, 54, 36);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
+    z-index:1;
+}
+
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    background-color: rgb(71, 54, 36);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
