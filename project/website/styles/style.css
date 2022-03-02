@@ -83,3 +83,10 @@ button:hover{
     background: rgba(139, 130, 130, 0.26);
     color: rgba(15, 12, 9, 0.87);
 }
+
+.newsletter{
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5rem 2rem;
+}
