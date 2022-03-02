@@ -54,9 +54,9 @@ ul li a:hover{
 .content{
     position: absolute;
     top: 58%;
-    left: 189px;
+    left: 1%;
     color: white;
-    transform: translate(0%, -65%);
+    transform: translate(-0.6%, -60%);
     text-align: center;
     background: rgba(80, 64, 47, 0.452);
 }
@@ -71,22 +71,20 @@ ul li a:hover{
 }
 
 button{
-    background: none;
+    background:fixed;
     border: 1px solid #fff;
     color: #fff;
     font-size: 18px;
     padding: 10px 28px;
     border-radius: 16px;
     transition: 0.7s all ease;
+    cursor:pointer;
 }
 button:hover{
     background: rgba(139, 130, 130, 0.26);
     color: rgba(15, 12, 9, 0.87);
 }
-
-.newsletter{
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 5rem 2rem;
+.footer{
+    background: rgba(139, 130, 130, 0.26);
 }
+
