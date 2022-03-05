@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta charset="utf-8">
+    <title>Strandzha</title>
+    <link rel="stylesheet" href="../styles/stylemain.css">
+   </head>
+   <body>
+       <header>
+           <img src="../images/p.jpg" class = "banner">
+           <a href="#" class="logo">Strandzha</a>
+           <nav>
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Regions</a></li>
+                   <li><a href="#">Game</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li><a href="#">Gallery</a></li>
+               </ul>
+           </nav>
+        </header>
+       <script>
+       window.addEventListener("scroll",function(){
+        const header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0); });
+    </script>
+   </body>
+</html>
