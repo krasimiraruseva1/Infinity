@@ -71,12 +71,3 @@ h2 {
     transition: transform 150ms;
     transform: scale(1.03);
 }
-#highscore-btn { /*exception for "High Scores" button*/
-    background: rgb(163, 224, 153);
-}
-#highscore-btn:hover { /*exception hover effects for "High Scores" button*/
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(163, 224, 153);
-}
-i {
-    font-size: 3rem;
-}
