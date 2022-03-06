@@ -31,12 +31,13 @@ h2 {
     max-width: 80rem;
     margin: auto;
     padding: 9rem;
-    background-color: #528058;
+    background-image: url("https://a.storyblok.com/f/44200/1280x850/e04150f0a7/thumbnail_dsc07760.jpg");
     position: absolute;
     top: 0; 
     bottom: 0; 
     left: 0; 
     right: 0;
+    border-radius: 45px;
 }
 .flex-column {
     display: flex;

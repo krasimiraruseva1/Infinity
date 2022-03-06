@@ -44,7 +44,7 @@ getNewQuestion = () => { // getNewQuestion function
     {   
         localStorage.setItem('mostRecentScore', score) // print out the most recent score and corenspondible score
 
-        return window.location.assign('/end.html') // end game of the page
+        return window.location.assign('end.html') // end game of the page
     }
         questionCounter++ //increment a question counter
         progressText.innerText = `Question ${questionCounter} of ${maxQuestions}` // Print out the number of question
@@ -61,14 +61,14 @@ getNewQuestion = () => { // getNewQuestion function
     
         availableQuestions.splice(questionsIndex, 1) //add the incrementation to make available questions and questions index equal
     
-        //acceptionAnswers = true //the value accept answers for 
+        acceptionAnswers = true //if the answer is correct and move on to the next question or not 
 }
 
 choices.forEach(choice => { // function for each choice
     choice.addEventListener('click', e => { // when is clicked
         if (!acceptionAnswers) return
 
-        //acceptionAnswers = false;
+        acceptionAnswers = false;
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
 
@@ -81,7 +81,7 @@ choices.forEach(choice => { // function for each choice
 
         selectedChoice.parentElement.classList.add(classToApply) //color of the answer according if it is true or false --> false - red, true - green <--
 
-        setTimeout (() => { //time to move on to the next question
+        setTimeout (() => { //time for moving on to the next question
             selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
         }, 1000)

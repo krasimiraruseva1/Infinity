@@ -15,7 +15,7 @@ body {
 }
 .choice-container:hover { /*container for choices-hover*/
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(96, 190, 41);
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(234, 236, 74);
     transform: scale(1.02);
 }
 .choice-prefix { /*adding the letter for choice in one line*/
@@ -28,7 +28,7 @@ body {
 }
 
 .correct {
-    background: rgb(13, 117, 13);
+    background: rgb(22, 184, 22);
 }
 
 .incorrect {
@@ -52,7 +52,7 @@ body {
 #progressBar { /*style for progress bar*/
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid greenyellow;
+    border: 0.2rem solid black;
     margin-top: 2rem;
     border-radius: 50px;
     overflow: hidden;
@@ -60,7 +60,7 @@ body {
 
 #progressBarFull {
     height: 100%;
-    background: greenyellow;
+    background: rgb(47, 255, 57);
     width: 0%;
 }
 
