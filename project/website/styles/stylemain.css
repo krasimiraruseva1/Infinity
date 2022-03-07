@@ -114,3 +114,17 @@ section p
 {
     font-size: 1.2em;
 }
+header.sticky .logo
+{
+    left: 40px;
+}
+nav ul
+{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+header.sticky .toogle
+{
+    position: fixed;
+}
