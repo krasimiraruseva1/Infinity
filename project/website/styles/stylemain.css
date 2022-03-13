@@ -27,6 +27,7 @@ header
 header.sticky
 {
     height: 80px;
+    z-index: 999;
 }
 header .banner
 {
@@ -57,6 +58,20 @@ header .logo
     z-index: 1;
 }
 
+header.sticky .toogle
+{
+    position: fixed;
+    top: 15px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: white url(../images/menu.jpg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 header.sticky .logo
 {
     position: absolute;
@@ -75,7 +90,6 @@ nav ul
 {
     position:relative;
     display: flex;
-    transition: 0.50s;
     transform: translateX(100px);
     opacity: 0;
 }
@@ -83,7 +97,6 @@ header.sticky nav ul
 {
     transform: translateX(0);
     opacity: 1;
-    transition-delay: 1s;
     opacity: 1;
     visibility: visible;
 }
@@ -98,14 +111,65 @@ display: inline-block;
 padding: 10px 15px;
 font-size: 1.2em;
 text-decoration: none;
+text-align: center;
 }
 nav ul li a:hover
 {
     color: rgb(98, 119, 101);
 }
+nav ul li .dropdown{
+    display: none;
+}
+nav ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background: rgb(98, 119, 101);
+}
+.dropdown li:hover a{
+    color: black;
+}
+nav.active ul
+    {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 80px);
+        background: rgb(5, 122, 40);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav.active li {
+        width: 100%;
+        text-align: center;
+
+    }
+    nav.active li:hover .dropdown{
+        background: rgb(5, 122, 40);
+    }
+    header.sticky .toogle.active
+    {
+        background: white url(../images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    nav.active ul li .dropdown{
+        display: block;
+        position: relative;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        text-align: center;
+    }
+
 section{
     margin-top: 50vh;
     padding: 100px;  
+    z-index: 0;
 }
 section h2
 {
@@ -136,42 +200,12 @@ section p
         opacity: 0;
         visibility: hidden;
     }
-    nav.active ul
-    {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        height: calc(100% - 80px);
-        background: rgb(5, 122, 40);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+    
     nav ul li a
     {
         font-size: 1.5em;
         padding: 5px 15px;
     }
-    header.sticky .toogle
-    {
-        position: fixed;
-        top: 15px;
-        right: 40px;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        background: white url(../images/menu.jpg);
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    header.sticky .toogle.active
-    {
-        background: white url(../images/close.png);
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+   
+   
 }
