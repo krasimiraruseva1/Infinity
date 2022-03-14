@@ -12,12 +12,20 @@ let availableQuestions = []
 
 let questions = [ /*questions*/
     {
-        question: "What is 2 + 2?",
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: "Which of the following landmarks does the description apply: The name of the town is also connected with the Great Heath?",
+        choice1: 'Thracian cult complex in Mishkova Niva',
+        choice2: 'The big scream',
+        choice3: 'Uspenie Bogorodichno',
+        choice4: 'Church of Tsar Boris Mihail',
         answer: 2, //second option for answer -- > choice 2: ''
+    },
+    {
+        question: "Which of the following landmarks does the description apply: It was built in 1831 on the foundations of another church, called the Holy Trinity, and is believed to have existed before the 16th century?",
+        choice1: 'Uspenie Bogorodichno',
+        choice2: 'Thracian cult complex in Mishkova Niva',
+        choice3: 'Church of Tsar Boris Mihail',
+        choice4: 'The big scream',
+        answer: 1, //first option for answer -- > choice 1: ''
     },
     {
         question: "What is 2 + 1?",
@@ -25,12 +33,28 @@ let questions = [ /*questions*/
         choice2: '5',
         choice3: '21',
         choice4: '17',
-        answer: 1, //first option for answer -- > choice 2: ''
+        answer: 1, //first option for answer -- > choice 1: ''
+    },
+    {
+        question: "What is 2 + 1?",
+        choice1: '3',
+        choice2: '5',
+        choice3: '21',
+        choice4: '17',
+        answer: 1, //first option for answer -- > choice 1: ''
+    },
+    {
+        question: "What is 2 + 1?",
+        choice1: '3',
+        choice2: '5',
+        choice3: '21',
+        choice4: '17',
+        answer: 1, //first option for answer -- > choice 1: ''
     }
 ]
 
 const scorePoints = 100;
-const maxQuestions = 2;
+const maxQuestions = 5;
 
 startGame = () => { // start game function
     questionCounter = 0
