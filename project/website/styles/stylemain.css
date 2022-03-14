@@ -8,7 +8,7 @@
 }
 body
 {
-    min-height: 1000px;
+    min-height: 700px;
 }
 header
 {
@@ -22,7 +22,7 @@ header
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    transition: 1s;
+    transition: 1.5s;
 }
 header.sticky
 {
@@ -56,20 +56,6 @@ header .logo
     transition: 2s;
     text-decoration: none;
     z-index: 1;
-}
-
-header.sticky .toogle
-{
-    position: fixed;
-    top: 15px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    background: white url(../images/menu.jpg);
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 header.sticky .logo
@@ -106,12 +92,12 @@ nav ul li
 }
 nav ul li a
 {
-color: rgb(255, 255, 255);
-display: inline-block;
-padding: 10px 15px;
-font-size: 1.2em;
-text-decoration: none;
-text-align: center;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
 }
 nav ul li a:hover
 {
@@ -166,18 +152,22 @@ nav.active ul
         text-align: center;
     }
 
-section{
+section
+{
     margin-top: 50vh;
     padding: 100px;  
     z-index: 0;
+    background-color: antiquewhite;   
 }
 section h2
 {
     font-size: 3em;
+    text-align: center;
 }
 section p
 {
     font-size: 1.2em;
+    text-align: center;
 }
 
 @media (max-width: 991px)
@@ -207,5 +197,17 @@ section p
         padding: 5px 15px;
     }
    
-   
+    header.sticky .toogle
+    {
+        position: fixed;
+        top: 15px;
+        right: 40px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background: white url(../images/menu.jpg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
