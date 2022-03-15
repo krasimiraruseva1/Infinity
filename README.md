@@ -1,2 +1,2 @@
-# Infinity
+# Team Infinity
 Our project is about Nature park 
