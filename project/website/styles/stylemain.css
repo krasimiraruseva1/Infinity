@@ -121,7 +121,7 @@ nav.active ul
         left: 0;
         width: 100%;
         height: calc(100% - 80px);
-        background: rgb(5, 122, 40);
+        background: rgb(103, 112, 106);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -133,7 +133,7 @@ nav.active ul
 
     }
     nav.active li:hover .dropdown{
-        background: rgb(5, 122, 40);
+        background: rgb(125, 131, 127);
     }
     header.sticky .toogle.active
     {
@@ -161,8 +161,9 @@ section
 }
 section h2
 {
-    font-size: 3em;
+    font-size: 30px;
     text-align: center;
+    color:rgba(44, 43, 43, 0.849);
 }
 section p
 {

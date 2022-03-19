@@ -5,13 +5,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+  
 }
 
 .card {
     position: relative;
     width: 45%;
     transition: 0.3s ease-in-out;
-    box-shadow: 0 3px 15px rgb(4, 124, 10);
+    box-shadow: 0 3px 15px rgb(131, 139, 126);
     margin-bottom: 6rem;
 }
 
@@ -32,10 +33,11 @@
 .card .content {
     width: 100%;
     padding: 12px;
-    background: rgb(155, 47, 47);
+    background: rgba(180, 143, 75, 0.733);
     transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
     box-sizing: border-box;
     overflow: hidden;
+
 }
 
 .card:hover .content {
@@ -53,6 +55,7 @@
     transform: 0.3s;
     text-align: justify;
     opacity: 0;
+
 }
 
 .card:hover .content p {
@@ -69,3 +72,4 @@ h2 {
 .card:hover {
     box-shadow: 0 0 5em rgba(0, 0, 0, 0.4)
 }
+
