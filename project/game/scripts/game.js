@@ -28,28 +28,28 @@ let questions = [ /*questions*/
         answer: 1, //first option for answer -- > choice 1: ''
     },
     {
-        question: "What is 2 + 1?",
-        choice1: '3',
-        choice2: '5',
-        choice3: '21',
-        choice4: '17',
-        answer: 1, //first option for answer -- > choice 1: ''
+        question: "Which of the following landmarks does the description apply: The complex includes a domed tomb-sanctuary, the remains of a fortified building (Villa Rustika - the residence of the servants of the temple)?",
+        choice1: 'The big scream',
+        choice2: 'Petrova niva',
+        choice3: 'Thracian necropolis and tombs in the area of ​Propada',
+        choice4: 'Thracian cult complex in Mishkova Niva',
+        answer: 3, //third option for answer -- > choice 3: ''
     },
     {
-        question: "What is 2 + 1?",
-        choice1: '3',
-        choice2: '5',
-        choice3: '21',
-        choice4: '17',
-        answer: 1, //first option for answer -- > choice 1: ''
+        question: "Which of the following landmarks does the description apply: In 1903, a congress of the VII Edirne Revolutionary District was held here?",
+        choice1: 'The big scream',
+        choice2: 'Thracian cult complex in Mishkova Niva',
+        choice3: 'Thracian necropolis and tombs in the area of ​Propada',
+        choice4: 'Petrova niva',
+        answer: 4, //fourth option for answer -- > choice 4: ''
     },
     {
-        question: "What is 2 + 1?",
-        choice1: '3',
-        choice2: '5',
-        choice3: '21',
-        choice4: '17',
-        answer: 1, //first option for answer -- > choice 1: ''
+        question: "Which of the following landmarks does the description apply: The complex includes a domed tomb-sanctuary, the remains of a fortified building (Villa Rustika - the residence of the servants of the temple)?",
+        choice1: 'Petrova niva',
+        choice2: 'Thracian necropolis and tombs in the area of ​Propada',
+        choice3: 'The big scream',
+        choice4: 'Thracian cult complex in Mishkova Niva',
+        answer: 4, //fourth option for answer -- > choice 4: ''
     }
 ]
 
