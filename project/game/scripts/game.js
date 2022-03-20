@@ -20,7 +20,7 @@ let questions = [ /*questions*/
         answer: 2, //second option for answer -- > choice 2: ''
     },
     {
-        question: "Which of the following landmarks does the description apply: It was built in 1831 on the foundations of another church, called the Holy Trinity, and is believed to have existed before the 16th century?",
+        question: "Which of the following landmarks does the description apply: It was built in 1831 on the foundations of another church, called the Holy Trinity?",
         choice1: 'Uspenie Bogorodichno',
         choice2: 'Thracian cult complex in Mishkova Niva',
         choice3: 'Church of Tsar Boris Mihail',
@@ -28,7 +28,7 @@ let questions = [ /*questions*/
         answer: 1, //first option for answer -- > choice 1: ''
     },
     {
-        question: "Which of the following landmarks does the description apply: The complex includes a domed tomb-sanctuary, the remains of a fortified building (Villa Rustika - the residence of the servants of the temple)?",
+        question: "Which of the following landmarks does the description apply: Connected with Villa Rustika - the residence of the servants of the temple?",
         choice1: 'The big scream',
         choice2: 'Petrova niva',
         choice3: 'Thracian necropolis and tombs in the area of ​Propada',
@@ -44,11 +44,11 @@ let questions = [ /*questions*/
         answer: 4, //fourth option for answer -- > choice 4: ''
     },
     {
-        question: "Which of the following landmarks does the description apply: The complex includes a domed tomb-sanctuary, the remains of a fortified building (Villa Rustika - the residence of the servants of the temple)?",
+        question: "Which of the following landmarks does the description apply: Small village, popular mostly for its large locality of the rare plant from prehistoric times?",
         choice1: 'Petrova niva',
         choice2: 'Thracian necropolis and tombs in the area of ​Propada',
         choice3: 'The big scream',
-        choice4: 'Thracian cult complex in Mishkova Niva',
+        choice4: 'Kondolovo',
         answer: 4, //fourth option for answer -- > choice 4: ''
     }
 ]
