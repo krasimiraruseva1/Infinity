@@ -63,6 +63,7 @@
     align-items: center;
     border-radius: 50%;
     font-size: 30px;
+    position: relative;
 }
 
 .container .contactInfo .box .text {
@@ -72,6 +73,7 @@
     color: #fff;
     flex-direction: column;
     font-weight: 300;
+    margin-bottom: 0%;
 }
 
 .container .contactInfo .box .text h3 {
@@ -80,9 +82,12 @@
 }
 
 .contactForm {
-    width: 80%;
-    padding: 70px;
+    width: 60%;
+    padding: 50px;
     background-color: #fff;
+    position:relative;
+    left: 43%;
+    margin-top: -10%;
 }
 
 .contactForm h2 {
