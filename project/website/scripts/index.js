@@ -1,7 +1,7 @@
 window.addEventListener("scroll",function(){
     const body = document.querySelector('body');
  
-    if(window.scrollY > 30) {
+    if(window.scrollY > 30) { 
         if(!body.classList.contains('sticky')) {
             body.classList.add('sticky');
             setTimeout(function() {
@@ -14,6 +14,6 @@ window.addEventListener("scroll",function(){
         }
     } else {
         body.classList.remove('sticky');
-    }
-    
+    } 
 })
+// script for scrolling in the page
