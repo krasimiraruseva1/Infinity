@@ -24,7 +24,7 @@ header
     align-items: center;
     transition: 1.5s;
 }
-.sticky header
+header.sticky
 {
     height: 80px;
     z-index: 999;
@@ -39,7 +39,7 @@ header .banner
     object-fit: cover;
     transition: 1s;
 }
-.sticky header .banner
+header.sticky .banner
 {
     opacity: 0.3;
 }
@@ -58,7 +58,7 @@ header .logo
     z-index: 1;
 }
 
-.sticky header .logo
+header.sticky .logo
 {
     position: absolute;
     font-size: 2em;
@@ -79,7 +79,7 @@ nav ul
     transform: translateX(100px);
     opacity: 0;
 }
-.sticky header nav ul
+header.sticky nav ul
 {
     transform: translateX(0);
     opacity: 1;
@@ -135,7 +135,7 @@ nav.active ul
     nav.active li:hover .dropdown{
         background: rgb(125, 131, 127);
     }
-    .sticky header .toogle.active
+    header.sticky .toogle.active
     {
         background: white url(../images/close.png);
         background-size: 25px;
@@ -154,16 +154,11 @@ nav.active ul
 
 section
 {
-    margin-top: 100vh;
+    margin-top: 50vh;
     padding: 100px;  
     z-index: 0;
     background-color: antiquewhite;   
-}
-.sticky section {
     margin-top: 0;
-    transition: 2.5s;
-    min-height: 300vh;
-    padding-top: 300px;
 }
 section h2
 {
@@ -187,7 +182,7 @@ section p
     {
         font-size: 2em;
     }
-    .sticky header .logo
+    header.sticky .logo
     {
         left: 40px;
     }
@@ -204,7 +199,7 @@ section p
         padding: 5px 15px;
     }
    
-    .sticky header .toogle
+    header.sticky .toogle
     {
         position: fixed;
         top: 15px;
